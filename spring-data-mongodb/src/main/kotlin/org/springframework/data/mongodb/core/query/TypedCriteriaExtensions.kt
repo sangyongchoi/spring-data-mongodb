@@ -352,6 +352,7 @@ infix fun KProperty<GeoJson<*>>.intersects(geoJson: GeoJson<*>): Criteria =
  * @since 2.2
  * @see Criteria.maxDistance
  */
+@Deprecated(message = "This function is bug", replaceWith = ReplaceWith("Criteria.maxDistance"))
 infix fun KProperty<GeoJson<*>>.maxDistance(d: Double): Criteria =
 		Criteria(this.toDotPath()).maxDistance(d)
 
@@ -362,6 +363,7 @@ infix fun KProperty<GeoJson<*>>.maxDistance(d: Double): Criteria =
  * @since 2.2
  * @see Criteria.minDistance
  */
+@Deprecated(message = "This function is bug", replaceWith = ReplaceWith("Criteria.minDistance"))
 infix fun KProperty<GeoJson<*>>.minDistance(d: Double): Criteria =
 		Criteria(this.toDotPath()).minDistance(d)
 
